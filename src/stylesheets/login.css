@@ -27,7 +27,7 @@
 
 .register {
     margin-left: 5px;
-    color: #2D79B4;
+    color: red;
 }
 
 .register:hover {
@@ -61,9 +61,12 @@ button.login-form-submit-button {
     border: none;
     width: 16rem;
 }
+
 button.login-form-submit-button:hover {
-    background: black;
+    background: white;
+    color: #2D79B4;
     transition: 0.5s;
+    border: 2px solid #2D79B4;
 }
 
 .font-increase{

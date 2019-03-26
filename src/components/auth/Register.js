@@ -37,10 +37,10 @@ const Register = () => {
         <Route
             render={({ history }) => (
                 <section className='registration-container'>
-                    <div className='registraion-flex' >
+                    <div className='registration-flex' >
                         <div className=''>
 
-                            <Link to='/' className=' waves-effect btn-flat'>
+                            <Link to='/' className='back-home'>
                                 <i className='material-icons left'>
                                     keyboard_backspace
                                 </i>

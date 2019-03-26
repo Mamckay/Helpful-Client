@@ -5,12 +5,17 @@
     justify-content: center;
 }
 
-.registraion-flex{
+.registration-flex{
     display: flex;
     justify-content: center;
 }
 
+.back-home{
+    color:black;
+}
+
 .loginLink {
+    color: red;
     margin-left: 5px;
 }
 
@@ -39,6 +44,8 @@
 }
 
 .registration-form-submit-button:hover{
-    background: black;
+    background: white;
+    color: #2D79B4;
+    border: 2px solid #2D79B4;
     transition: 0.5s;
 }
