@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { API_BASE_URL } from "../config";
 import "../stylesheets/create-org-form.css";
@@ -35,6 +35,9 @@ export default function CreateOrgForm() {
                 alert("Organization already Exists");
                 setSuccess(false);
             });
+        if (createOrgResult) {
+            console.log('success');
+        }
     };
 
     const handleSubmit = e => {

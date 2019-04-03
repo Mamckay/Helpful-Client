@@ -92,7 +92,6 @@ export default function EventList() {
 
     // generate EventCard components with event data
     let rsvpEventCardList, localEventCardList;
-    let eventTitle = "Nearby Events";
     if (rsvpEvents) {
         generateRsvpEventList(rsvpEvents);
         rsvpEventCardList = rsvpEventList.map((event, index) => {
@@ -105,11 +104,6 @@ export default function EventList() {
             return <EventCard key={index} event={event} />;
         });
     }
-
-    if (!location) {
-        eventTitle = "All Events";
-    }
-
     return (
         <section className='event-container'>
             <div className='rsvp-events'>

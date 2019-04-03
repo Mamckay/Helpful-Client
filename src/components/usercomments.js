@@ -26,7 +26,10 @@ const UserComments = (props) => {
         fetchComments();
       })
       .catch(error => console.error(error));
+
+    console.log(createCommentResult);
   };
+
 
   const fetchComments = async () => {
     const fetchCommentsResult = await axios(`${API_BASE_URL}/comments/event/${props.eventId}`, {

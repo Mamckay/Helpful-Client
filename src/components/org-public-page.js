@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_BASE_URL } from "../config";
-import OrgPublicPageEventList from "./org-public-page-event-list";
 import UserCanRateOrg from "./user-can-rate-org";
 // import UserComments from "./usercomments";
 import "../stylesheets/org-public-page.css";

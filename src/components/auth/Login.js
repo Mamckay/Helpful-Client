@@ -4,7 +4,7 @@ import { Link, Route } from "react-router-dom";
 import { API_BASE_URL } from "../../config";
 import "../../stylesheets/login.css";
 
-import jwt_decode from "jwt-decode";
+// import jwt_decode from "jwt-decode";
 
 const Login = () => {
     const [user, setUser] = useState("");
@@ -27,9 +27,9 @@ const Login = () => {
                     const token = res.data.authToken;
                     localStorage.setItem("jwtToken", token);
                     // Set token to Auth header
-                    //setAuthToken(token);
+                    // setAuthToken(token);
                     // Decode token to get user data
-                    const decoded = jwt_decode(token);
+                    // const decoded = jwt_decode(token);
                     // Set current user
                     return "dashboard";
                 }
