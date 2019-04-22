@@ -24,8 +24,17 @@ export default function Search(props) {
                         lng: Number(position.coords.longitude.toFixed(7)),
                     };
                     setLocation(results);
+                }, function (error) {
+                    if (error.code === error.PERMISSION_DENIED) {
+                        let results = {
+                            lat: 39.5,
+                            lng: -98.35,
+                        };
+                        setLocation(results);
+                    }
                 });
             }
+
         }
     };
 
