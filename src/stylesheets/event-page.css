@@ -34,8 +34,10 @@ button.event-public-rsvp-button {
     width: 16rem;
 }
 button.event-public-rsvp-button:hover {
-    background: black;
+    background: white;
+    color: #2D79B4;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .event-public-comment{
